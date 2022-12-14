@@ -31,7 +31,7 @@ if __name__ == "__main__":
     ts_st = 1e15
     ts_nd = 0
     for row in trange(len(call_ts)):
-    	if type(call_ts[row,1]) == str and type(call_ts[row,2]) == str and call_ts[row,1] < 28800000:
+    	if type(call_ts[row,1]) == str and type(call_ts[row,2]) == str and call_ts[row,0] < 28800000:
             if call_ts[row,0] < ts_st:
                 ts_st = call_ts[row,0]
             if call_ts[row,0] > ts_nd:
